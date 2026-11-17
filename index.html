@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Profil - Bagus Ali Nugroho</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Times New Roman", serif;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+            color: #222;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #1e3a8a;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #93c5fd;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 0;
+        }
+        .pembuka {
+            text-align: justify;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        .foto-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .foto-profil {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1e3a8a;
+        }
+
+        /* Identitas Mahasiswa */
+        .identitas {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .identitas ol li strong {
+            display: inline-block;
+            width: 85px;
+        }
+
+        /* Pengaturan Responsive (Layar HP / Tablet di bawah 600px) */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+                margin: 10px auto;
+            }
+            .container {
+                padding: 15px;
+            }
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            .pembuka, .identitas {
+                font-size: 16px;
+            }
+            .foto-profil {
+                width: 150px;
+                height: 150px;
+                object-position: 50% 27%;
+            }
+            .identitas ol li strong {
+                width: 75px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Menu Navigasi (Sesuai contoh tugas) -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profil2.html">Profil Lengkap</a>
+            <a href="profil3.html">Jadwal Kuliah</a>
+        </nav>
+
+        <h2>HALAMAN PROFIL</h2>
+
+        <p class="pembuka">
+            Pertama-tama Puji syukur marilah kita panjatkan ke hadirat Tuhan Yang Maha Esa yang mana atas segala 
+            rahmat dan hidayah-Nya kita dapat bertemu di laman virtual ini dalam media website Informatika Fakultas Sains 
+            dan Teknologi Universitas PGRI Yogyakarta. Halaman profil ini merupakan halaman latihan dalam pembuatan 
+            halaman profil sederhana oleh mahasiswa Prodi Informatika FST Universitas PGRI Yogyakarta. Halaman profil 
+            ini sebagai tugas mata kuliah Desain Web dan Pengenalan Framework.
+        </p>
+
+        <!-- Gambar Profil berbentuk lingkaran -->
+        <div class="foto-container">
+            <img src="JAS.jpeg" alt="Foto Profil" class="foto-profil">
+        </div>
+
+        <div class="identitas">
+            <h3>Identitas Mahasiswa</h3>
+            
+            <ol>
+                <li><strong>Nama</strong> : Bagus Ali Nugroho</li>
+                <li><strong>Alamat</strong> : Wijirejo, Pandak, Bantul</li>
+                <li><strong>Hobi</strong> : Gaming</li>
+                <li><strong>Website</strong> : <a href="https://satria.upy.ac.id/mahasiswa" target="_blank">Universitas PGRI Yogyakarta</a></li>
+            </ol>
+
+            <hr>
+        </div>
+    </div>
+</body>
+</html>
